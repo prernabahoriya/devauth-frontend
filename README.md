@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+DevAuth 🔐
+A simple full-stack authentication app built with Next.js, Express.js, MongoDB, and JWT.
+It allows users to securely sign up, log in, access protected routes, and manage sessions using JSON Web Tokens (JWT).
 
-## Getting Started
+🚀 Live Demo
+Frontend (Vercel): https://devauth-frontend.vercel.app
 
-First, run the development server:
+Backend (Render): https://devauth-backend-xxxxx.onrender.com
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+(Replace these links with your actual deployed URLs)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠️ Tech Stack
+Frontend	Backend	Database	Authentication
+Next.js 15	Express.js	MongoDB Atlas	JWT
+Tailwind CSS	Node.js	Mongoose	bcryptjs
+Vercel (deploy)	Render (deploy)		dotenv
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+✨ Features
+User Signup & Login with JWT-based authentication.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Passwords securely hashed using bcryptjs.
 
-## Learn More
+Protected routes (Dashboard & Profile) only accessible after login.
 
-To learn more about Next.js, take a look at the following resources:
+Auto token validation from backend (secure).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Responsive UI with Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Simple Navbar with Logout functionality.
 
-## Deploy on Vercel
+Deployed on Vercel (frontend) & Render (backend).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔒 Routes Overview
+Route	Method	Protected	Description
+/signup	POST	❌ No	Create new user
+/login	POST	❌ No	Login and receive JWT
+/profile	GET	✅ Yes	Get protected user info
+/dashboard	GET	✅ Yes	Example dashboard route
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🙌 Acknowledgements
+This was built as part of my learning journey into full-stack web development with Node.js & Next.js.
+
+📣 Connect with me
+LinkedIn: https://in.linkedin.com/in/prerna-bahoriya-a948492b2
+
+GitHub: https://github.com/prernabahoriya
+
