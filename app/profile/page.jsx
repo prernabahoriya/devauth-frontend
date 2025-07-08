@@ -15,7 +15,7 @@ export default function ProfilePage() {
       }
 
       try {
-        const res = await fetch("http://localhost:5000/profile", {
+        const res = await fetch("https://devauth-backend-y1mk.onrender.com/profile", {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
         });
